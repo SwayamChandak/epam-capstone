@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travus - Electronics Store</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/components.css">
+    <link rel="stylesheet" href="src/css/animations.css">
+    <script src="src/js/main.js" defer></script>
+    <script src="src/js/slider.js" defer></script>
+    <script src="src/js/components.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <div class="offer-text">FREE Express Shipping On Orders $570+</div>
+                <div class="top-bar-right">
+                    <button class="language-select">English</button>
+                    <button class="currency-select">USD</button>
+                    <button class="settings-btn">Setting</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="src/assets/images/palm-tree-logo.png" alt="Travila" class="logo-img">
+                    <span>Travila</span>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search for Products...">
+                    <select class="category-select">
+                        <option value="">Select Category</option>
+                    </select>
+                    <button type="button" class="search-btn">
+                        <i class="search-icon">🔍</i>
+                    </button>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="user-account">
+                        <img src="src/assets/images/user-placeholder.png" alt="User">
+                        <div class="user-account-text">
+                            <span>Hello, Sign In</span>
+                            <span>Your Account</span>
+                        </div>
+                    </a>
+                    <div class="header-icons">
+                        <a href="#" class="wishlist-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <span class="count">0</span>
+                        </a>
+                        <a href="#" class="cart-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                            <span class="count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="category-nav">
+            <div class="nav-content">
+                <button class="all-categories">
+                    <i class="menu-icon">☰</i>
+                    All Categories
+                </button>
+                <ul class="main-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#coupons">Coupons</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-slider">
+        <div class="slides">
+            <div class="slide active">
+                <div class="slide-content">
+                    <div class="content-wrapper">
+                        <div class="price">Starting at $274.00</div>
+                        <h1>The best tablet<br>Collection 2023</h1>
+                        <div class="offer">
+                            Exclusive offer <span class="discount">-35%</span> off this week
+                        </div>
+                        <button class="shop-now">
+                            Shop Now
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="src/assets/images/hero/watches.png" alt="Smart Watch Collection" class="watches">
+                        <img src="src/assets/images/hero/leaves.png" alt="Decorative Leaves" class="leaves">
+                        <img src="src/assets/images/hero/petals.png" alt="Decorative Petals" class="petals">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-indicators">
+            <button class="indicator active"></button>
+            <button class="indicator"></button>
+            <button class="indicator"></button>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="icon">🎧</div>
+                <h3>Headphones</h3>
+                <p>3 Products</p>
+            </div>
+            <!-- More category cards will be added dynamically -->
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-grid">
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="src/assets/images/headphones.png" alt="Headphones">
+                    </div>
+                    <h3>Headphones</h3>
+                    <span class="product-count">3 Product</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="src/assets/images/mobile_tablets.png" alt="Mobile Tablets">
+                    </div>
+                    <h3>Mobile Tablets</h3>
+                    <span class="product-count">5 Product</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="src/assets/images/cpu_heat_pipes.png" alt="CPU Heat Pipes">
+                    </div>
+                    <h3>CPU Heat Pipes</h3>
+                    <span class="product-count">2 Product</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="src/assets/images/smart_watch.png" alt="Smart Watch">
+                    </div>
+                    <h3>Smart Watch</h3>
+                    <span class="product-count">5 Product</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">
+                        <img src="src/assets/images/bluetooth.png" alt="Bluetooth">
+                    </div>
+                    <h3>Bluetooth</h3>
+                    <span class="product-count">2 Product</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Features -->
+    <section class="service-features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="src/assets/images/delivery-icon.png" alt="Free Delivery">
+                    </div>
+                    <div class="feature-content">
+                        <h4>Free Delivery</h4>
+                        <p>Orders from all item</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="src/assets/images/return-icon.png" alt="Return & Refund">
+                    </div>
+                    <div class="feature-content">
+                        <h4>Return & Refund</h4>
+                        <p>Money back guarantee</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="src/assets/images/discount-icon.png" alt="Member Discount">
+                    </div>
+                    <div class="feature-content">
+                        <h4>Member Discount</h4>
+                        <p>One very order over $140.00</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="src/assets/images/support-icon.png" alt="Support 24/7">
+                    </div>
+                    <div class="feature-content">
+                        <h4>Support 24/7</h4>
+                        <p>Contact us 24 hours a day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="trending-products">
+        <div class="section-header">
+            <h2>Trending Products</h2>
+            <div class="tabs">
+                <button class="tab active">New</button>
+                <button class="tab">Featured</button>
+                <button class="tab">Top Sellers</button>
+            </div>
+        </div>
+        <div class="products-grid">
+            <!-- Products will be added dynamically -->
+        </div>
+    </section>
+
+    <!-- Deal of the Day -->
+    <section class="deal-of-day">
+        <h2>Deal of The Day</h2>
+        <div class="deals-grid">
+            <!-- Deals will be added dynamically -->
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="latest-news">
+        <h2>Latest news & articles</h2>
+        <div class="news-grid">
+            <!-- News articles will be added dynamically -->
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Subscribe our Newsletter</h2>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <form class="footer-subscribe">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

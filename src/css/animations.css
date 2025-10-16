@@ -1,0 +1,113 @@
+/* Fade Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Slider Transitions */
+.slide {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.slide-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.slide-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Tab Transitions */
+.tab-content {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tab-enter {
+    opacity: 0;
+}
+
+.tab-enter-active {
+    opacity: 1;
+}
+
+.tab-exit {
+    opacity: 1;
+}
+
+.tab-exit-active {
+    opacity: 0;
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Loading Animations */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    animation: spin 1s linear infinite;
+}
+
+/* Form Feedback Animations */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}

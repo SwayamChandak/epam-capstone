@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/components.css">
     <link rel="stylesheet" href="src/css/animations.css">
+    <link rel="stylesheet" href="src/css/gadgets.css">
     <script src="src/js/main.js" defer></script>
     <script src="src/js/slider.js" defer></script>
     <script src="src/js/components.js" defer></script>
@@ -356,8 +357,17 @@
     </section>
 
     <!-- Deal of the Day -->
-    <section class="deal-of-the-day">
+    <section class="deal-of-the-day" style="background-color: #ECF2F7;">
         <div class="container">
+            <div class="section-header">
+                <div class="title-wrapper">
+                    <h2>Deal of The Day</h2>
+                    <svg class="deal-of-the-day-vector" width="55" height="11" viewBox="0 0 55 11" fill="none">
+                        <path d="M1.5 9.5C18.167 5.667 47.1 -0.5 53.5 4.5" stroke="#FF5151" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <a href="#" class="view-all-btn">View All Deals →</a>
+            </div>
             <div class="deal-of-the-day-grid">
                 <div class="deal-of-the-day-card">
                     <div class="deal-image">
@@ -370,7 +380,7 @@
                             <span class="stars">★★★★★</span>
                             <span class="reviews">(2 Reviews)</span>
                         </div>
-                        <div class="deal-price">$123.50</div>
+                        <div class="deal-price">$129.50</div>
                         <div class="stock-info">
                             <div class="stock-item">
                                 <span>62</span>
@@ -455,6 +465,162 @@
                                 Hours
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electronics and Gadgets -->
+    <section class="section gadgets-section">
+        <div class="gadgets-wrapper">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <span class="section-subtitle">Featured Products</span>
+                    <h2>Electronics & Gadgets</h2>
+                </div>
+            </div>
+            
+            <div class="gadgets-container">
+            <!-- Featured Cards Container -->
+            <div class="featured-container">
+                <!-- Featured Card - Electronics Gadgets -->
+                <div class="featured-card white-card">
+                    <img src="src/assets/images/deal_of_the_day/girl.png" alt="Electronics Gadgets" class="girl-image">
+                    <div class="card-content">
+                        <div class="category-tag">Electronics</div>
+                        <h3>Gadgets</h3>
+                        <ul class="products-list">
+                            <li>• Microscope</li>
+                            <li>• Remote Control</li>
+                            <li>• Monitor</li>
+                            <li>• Thermometer</li>
+                            <li>• Backpack</li>
+                            <li>• Headphones</li>
+                        </ul>
+                        <a href="#" class="more-link">More Products →</a>
+                    </div>
+                </div>
+
+                <!-- Featured Card - Selected Novelty -->
+                <div class="featured-card purple-card">
+                    <div class="card-content">
+                        <div>
+                            <h3>Selected novelty Products</h3>
+                            <div class="price-tag">Only $99.00</div>
+                            <div class="out-of-stock">Out Of Stock</div>
+                        </div>
+                        <a href="#" class="more-link">Products →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regular Product Cards Container -->
+            <div class="product-cards-container">
+            <div class="product-card-new">
+                <div class="image-container">
+                    <img src="src/assets/images/deal_of_the_day/headphones.png" alt="Headphones Wireless">
+                </div>
+                <div class="content">
+                    <div class="category">Headphones</div>
+                    <h3 class="title">Headphones Wireless</h3>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="review-count">(3 Reviews)</span>
+                    </div>
+                    <div class="price-container">
+                        <span class="original-price">$120</span>
+                        <span class="discounted-price">$103.20</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-new">
+                <div class="image-container">
+                    <img src="src/assets/images/deal_of_the_day/headphone-1.png" alt="Gaming Headphone">
+                </div>
+                <div class="content">
+                    <div class="category">Headphones</div>
+                    <h3 class="title">Gaming Headphone</h3>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">(2 Reviews)</span>
+                    </div>
+                    <div class="price-container">
+                        <span class="original-price">$130</span>
+                        <span class="discounted-price">$123.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-new">
+                <div class="image-container">
+                    <img src="src/assets/images/deal_of_the_day/headphone-with-mic.png" alt="Headphone with Mic">
+                </div>
+                <div class="content">
+                    <div class="category">Headphones</div>
+                    <h3 class="title">Headphone with Mic</h3>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="review-count">(3 Reviews)</span>
+                    </div>
+                    <div class="price-container">
+                        <span class="original-price"></span>
+                        <span class="discounted-price">$110.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-new">
+                <div class="image-container">
+                    <img src="src/assets/images/deal_of_the_day/tablet.png" alt="Galaxy Android Tablet">
+                </div>
+                <div class="content">
+                    <div class="category">Mobile Tablets</div>
+                    <h3 class="title">Galaxy Android Tablet</h3>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="review-count">(2 Reviews)</span>
+                    </div>
+                    <div class="price-container">
+                        <span class="original-price">$320</span>
+                        <span class="discounted-price">$288.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-new">
+                <div class="image-container">
+                    <img src="src/assets/images/deal_of_the_day/iphone.png" alt="iPhone 14 Pro">
+                </div>
+                <div class="content">
+                    <div class="category">Mobile Tablets</div>
+                    <h3 class="title">iPhone 14 Pro</h3>
+                    <div class="rating">
+                        <div class="stars">★★★★☆</div>
+                        <span class="review-count">(2 Reviews)</span>
+                    </div>
+                    <div class="price-container">
+                        <span class="original-price">$1199</span>
+                        <span class="discounted-price">$1019.15</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card-new">
+                <div class="image-container">
+                    <img src="src/assets/images/deal_of_the_day/ipad.png" alt="Apple iPad Air">
+                </div>
+                <div class="content">
+                    <div class="category">Mobile Tablets</div>
+                    <h3 class="title">Apple iPad Air</h3>
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                        <span class="review-count">(2 Reviews)</span>
+                    </div>
+                    <div class="price-container">
+                        <span class="original-price">$999</span>
+                        <span class="discounted-price">$949.05</span>
                     </div>
                 </div>
             </div>

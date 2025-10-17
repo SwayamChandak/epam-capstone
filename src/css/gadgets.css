@@ -1,0 +1,308 @@
+.gadgets-wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.gadgets-container {
+    display: grid;
+    grid-template-columns: 350px 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.featured-container {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product-cards-container {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.featured-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.featured-card.white-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    color: #1f2937;
+    position: relative;
+    overflow: hidden;
+    padding-right: 150px;
+}
+
+.featured-card.white-card .girl-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+}
+
+.featured-card.purple-card {
+    /* background: linear-gradient(135deg, #6c49ec, #4338ca); */
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem;
+    min-height: 177px;
+    background-image: url('../assets/images/deal_of_the_day/headphones-grading.jpg');
+    background-size: cover;
+    background-position: right center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.featured-card.purple-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(108, 73, 236, 0.9), rgba(67, 56, 202, 0.85));
+    z-index: 1;
+}
+
+.featured-card.purple-card .card-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.featured-card.purple-card h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.featured-card.purple-card .price-tag {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.featured-card.purple-card .out-of-stock {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.featured-card.purple-card .more-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: auto;
+}
+
+.featured-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.featured-card .products-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.featured-card .products-list li {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4b5563;
+}
+
+.featured-card .more-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.featured-card.white-card .more-link {
+    color: #4f46e5;
+}
+
+.featured-card.purple-card .more-link {
+    color: white;
+}
+
+.featured-card .card-image {
+    width: 100%;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+.featured-card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.featured-card .category-tag {
+    display: inline-block;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.featured-card .price-tag {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.out-of-stock {
+    display: inline-block;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.featured-card .more-link:hover {
+    text-decoration: underline;
+}
+
+.product-card-new {
+    background: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.product-card-new:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-card-new .image-container {
+    position: relative;
+    padding-top: 75%;
+    overflow: hidden;
+}
+
+.product-card-new img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.product-card-new .content {
+    padding: 1rem;
+}
+
+.product-card-new .category {
+    color: #6366f1;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.product-card-new .title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.product-card-new .price-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.product-card-new .original-price {
+    color: #6b7280;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.product-card-new .original-price:empty {
+    display: none;
+}
+
+.product-card-new .discounted-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4338ca;
+}
+
+.product-card-new .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card-new .stars {
+    color: #fbbf24;
+}
+
+.product-card-new .review-count {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* Section Header Styles */
+.gadgets-section .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gadgets-section .section-header-left {
+    display: inline-block;
+    text-align: center;
+}
+
+.gadgets-section .section-subtitle {
+    color: #6c49ec;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.gadgets-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin: 0;
+}

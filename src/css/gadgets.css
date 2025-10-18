@@ -25,6 +25,14 @@
     gap: 1.5rem;
 }
 
+.tablet-offer-section {
+    padding: 2rem 0;
+}
+
+.tablet-offer-banner {
+    margin: 0 auto;
+}
+
 .featured-card {
     padding: 1.5rem;
     border-radius: 1rem;
@@ -305,4 +313,93 @@
     font-size: 2rem;
     color: #1f2937;
     margin: 0;
+}
+
+/* Tablet Offer Banner */
+.tablet-offer-banner {
+    background-color: #405FF2;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tablet-offer-content {
+    max-width: 50%;
+    z-index: 2;
+}
+
+.tablet-offer-tag {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.tablet-offer-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.tablet-offer-price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.tablet-offer-price .original-price {
+    font-size: 1.25rem;
+    text-decoration: line-through;
+    opacity: 0.8;
+    margin-left: 1rem;
+}
+
+.shop-now-btn {
+    background: #000;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    transform: translateY(-2px);
+}
+
+.tablet-offer-image {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45%;
+    z-index: 1;
+}
+
+.discount-badge {
+    position: absolute;
+    right: 50%;
+    top: 1rem;
+    background: #FF4D4D;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 3;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
 }

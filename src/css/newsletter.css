@@ -1,0 +1,124 @@
+.newsletter {
+    height: 201px;
+    background-color: #F9FBFC;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.newsletter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 173px;
+    background-image: url('../assets/images/newsletter/pattern.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.newsletter .circles-decoration {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    width: 82px;
+    height: 26px;
+    background-image: url('../assets/images/newsletter/circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.newsletter .arrows-decoration {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    width: 82px;
+    height: 26px;
+    background-image: url('../assets/images/newsletter/arrows.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.newsletter .human-img {
+    position: absolute;
+    left: 1350px;
+    top: 10px;
+    width: 120px;
+    height: 190px;
+}
+
+.newsletter .newsletter-text {
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    transform: translateX(-50%);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.newsletter .sale-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #272343;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.newsletter .newsletter-heading {
+    font-size: 24px;
+    color: #272343;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.newsletter .form-wrapper {
+    position: absolute;
+    left: 900px;
+    top: 70px;
+    z-index: 1;
+}
+
+.newsletter .paper-plane {
+    position: absolute;
+    left: 15%;
+    top: -30px;
+    transform: translateX(-50%);
+    width: 41px;
+    height: 43px;
+    z-index: 2;
+}
+
+.newsletter .subscribe-form {
+    width: 526px;
+    height: 60px;
+    opacity: 1;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.newsletter .subscribe-form input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #E0E4E9;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #000000;
+    opacity: 1;
+    transform: rotate(0deg);
+    color: white;
+}
+
+.newsletter .subscribe-form input::placeholder {
+    color: white;
+}

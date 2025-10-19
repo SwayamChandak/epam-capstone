@@ -694,13 +694,6 @@ body {
     padding: 2rem 0;
 }
 
-/* Newsletter */
-.newsletter {
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 4rem 1rem;
-    text-align: center;
-}
 
 .subscribe-form {
     max-width: 500px;

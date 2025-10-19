@@ -1,0 +1,48 @@
+.instagram-gallery {
+    padding: 3rem 0;
+    background-color: white;
+}
+
+.instagram-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.instagram-item {
+    width: 240px;
+    height: 257.14px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.instagram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instagram-item:hover img {
+    transform: scale(1.05);
+}
+
+.instagram-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.instagram-item:hover::after {
+    opacity: 1;
+}

@@ -1,0 +1,144 @@
+.footer {
+    background-color: #000000;
+    height: 698px;
+    padding: 41px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer-container {
+    width: 1248px;
+    height: 616px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer-content {
+    width: 1224px;
+    height: 160px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #FFFFFF;
+}
+
+.footer-divider {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.need-help, .join-affiliate, .send-message {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.help-icon, .affiliate-icon, .message-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.help-text, .affiliate-text, .message-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.help-text p, .affiliate-text p, .message-text p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.phone-number {
+    font-size: 18px !important;
+    font-weight: 600;
+    color: #FFFFFF !important;
+}
+
+.affiliate-cta {
+    font-weight: 500;
+    color: #FFFFFF !important;
+}
+
+.message-desc {
+    font-size: 12px !important;
+    max-width: 250px;
+    line-height: 1.4;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.follow-text {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #272727;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}

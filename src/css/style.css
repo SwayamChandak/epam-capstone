@@ -704,17 +704,20 @@ body {
 
 /* Footer */
 .footer {
-    background: #1a1a1a;
-    color: var(--white);
-    padding: 4rem 1rem;
+    background-color: #000000;
+    height: 698px;
+    padding: 41px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.footer-grid {
-    max-width: var(--max-width);
+.footer-container {
+    width: 1248px;
+    height: 616px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Responsive Design */
